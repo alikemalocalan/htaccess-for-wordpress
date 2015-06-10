@@ -1,3 +1,3 @@
 # htaccess-for-wordpress
 
-wordpress için htaccess
+wordpress için ideal  htaccess ayarları
