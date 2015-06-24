@@ -241,6 +241,7 @@ Header append Vary User-Agent env=!dont-vary
 
 	
         # HTML, TXT, CSS, JavaScript, JSON, XML, HTC:
+        # bazı nginx revers apache snucusunda burasu hata verebiliyiyor
 	<IfModule filter_module>
 	FilterDeclare   COMPRESS
 	FilterProvider  COMPRESS  DEFLATE resp=Content-Type $text/html
