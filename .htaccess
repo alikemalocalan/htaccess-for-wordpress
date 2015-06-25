@@ -271,7 +271,16 @@ Header append Vary User-Agent env=!dont-vary
 		AddOutputFilterByType DEFLATE image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
 		</IfModule>
 </IfModule>
+#google onermesede bazen bu onbelleklme ise yarıyor
+<ifmodule mod_expires.c>
+  <filesmatch "\.(jpg|gif|png|css|js)$">
+       ExpiresActive on
+       ExpiresDefault "access plus 518400 seconds"
+   </filesmatch>
+</ifmodule>
+# Expires Headers - 518400 = 6 days
 # Expires Headers - 2678400s = 31 days
+#yukarıdakini kullanıyorsanız bunu silin
 <ifmodule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 seconds"
