@@ -279,23 +279,7 @@ Header append Vary User-Agent env=!dont-vary
    </filesmatch>
 </ifmodule>
 # Expires Headers - 518400 = 6 days
-# Expires Headers - 2678400s = 31 days
-#yukarıdakini kullanıyorsanız bunu silin
-<ifmodule mod_expires.c>
-  ExpiresActive On
-  ExpiresDefault "access plus 1 seconds"
-  ExpiresByType text/html "access plus 0 seconds"
-  ExpiresByType image/gif "access plus 2678400 seconds"
-  ExpiresByType image/jpeg "access plus 2678400 seconds"
-  ExpiresByType image/png "access plus 2678400 seconds"
-  ExpiresByType text/css "access plus 518400 seconds"
-  ExpiresByType text/javascript "access plus 2678400 seconds"
-  ExpiresByType application/x-javascript "access plus 2678400 seconds"
-  ExpiresByType application/x-font-woff  "access plus 2678400 seconds"
-</ifmodule>
 
-
-  
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
