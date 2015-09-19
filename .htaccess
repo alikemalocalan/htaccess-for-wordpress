@@ -112,7 +112,7 @@ Options -Indexes
 <IfModule mod_headers.c>
   Header unset ETag
 </IfModule>
-
+FileETag None
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
