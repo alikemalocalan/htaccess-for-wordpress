@@ -27,6 +27,8 @@
 
 # Rules to disable directory browsing
 Options -Indexes
+ServerSignature Off 
+LimitRequestBody 10240000
 
 <IfModule pagespeed_module>
     ModPagespeed on
