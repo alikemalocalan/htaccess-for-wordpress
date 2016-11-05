@@ -36,6 +36,8 @@ Options -Indexes
 #google onermesede bazen bu onbelleklme ise yarıyor
 <IfModule mod_headers.c>
   Header set X-UA-Compatible "IE=Edge,chrome=1"
+  Header unset X-Powered-By
+  Header unset Server
   # mod_headers can't match by content-type, but we don't want to send this header on *everything*...
   <FilesMatch "\.(appcache|crx|css|eot|gif|htc|ico|jpe?g|js|m4a|m4v|manifest|mp4|oex|oga|ogg|ogv|otf|pdf|png|safariextz|svg|svgz|ttf|vcf|webm|webp|woff|xml|xpi)$">
     Header unset X-UA-Compatible
