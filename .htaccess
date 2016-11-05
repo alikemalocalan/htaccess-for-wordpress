@@ -24,6 +24,10 @@
 	Order allow,deny
 	Deny from all
 </files>
+<files wp-load.php>
+order allow,deny
+deny from all
+</files>
 
 # Rules to disable directory browsing
 Options -Indexes
