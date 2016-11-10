@@ -42,6 +42,7 @@ LimitRequestBody 10240000
 #google onermesede bazen bu onbelleklme ise yarıyor
 <IfModule mod_headers.c>
   Header set X-UA-Compatible "IE=Edge,chrome=1"
+  Header set X-XSS-Protection "1; mode=block"
   Header unset X-Powered-By
   Header unset Server
   # mod_headers can't match by content-type, but we don't want to send this header on *everything*...
