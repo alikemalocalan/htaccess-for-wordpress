@@ -43,6 +43,8 @@ LimitRequestBody 10240000
 <IfModule mod_headers.c>
   Header set X-UA-Compatible "IE=Edge,chrome=1"
   Header set X-XSS-Protection "1; mode=block"
+  Header always append X-Frame-Options SAMEORIGIN
+  Header set X-Content-Type-Options nosniff
   Header unset X-Powered-By
   Header unset Server
   # mod_headers can't match by content-type, but we don't want to send this header on *everything*...
