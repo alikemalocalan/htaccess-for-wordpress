@@ -31,7 +31,8 @@ deny from all
 
 # Rules to disable directory browsing
 Options -Indexes
-ServerSignature Off 
+ServerSignature Off
+ServerTokens Prod
 LimitRequestBody 10240000
 
 <IfModule pagespeed_module>
