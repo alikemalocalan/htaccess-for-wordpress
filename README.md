@@ -1,3 +1,3 @@
 # htaccess-for-wordpress
 
-wordpress için ideal  htaccess ayarları
+Htaccess settings for maximum performance WordPress
