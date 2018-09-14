@@ -30,10 +30,10 @@ deny from all
 </files>
 
 # Rules to disable directory browsing
-Options -Indexes
-ServerSignature Off
-ServerTokens Prod
-LimitRequestBody 10240000
+#Options -Indexes
+#ServerSignature Off
+#ServerTokens Prod
+#LimitRequestBody 10240000
 
 <IfModule pagespeed_module>
     ModPagespeed on
